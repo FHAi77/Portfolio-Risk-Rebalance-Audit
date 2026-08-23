@@ -1,22 +1,6 @@
 {
-  "analysis_period": {
-    "start": "2025-01-02",
-    "end": "2025-06-30",
-    "benchmark": "SPY"
-  },
-  "portfolio_summary": {
-    "analysis_start": "2025-01-02",
-    "analysis_end": "2025-06-30",
-    "starting_market_value": 89825.00,
-    "ending_market_value": 100000.00,
-    "portfolio_period_return_pct": 11.33,
-    "benchmark_return_pct": 5.98,
-    "tracking_difference_pct": 5.35,
-    "annualized_volatility_pct": 3.99,
-    "max_drawdown_pct": 0.00,
-    "rebalance_triggered": true,
-    "cash_after_rebalance": 150.00
-  },
+  "analysis_period": {"start":"2025-01-02","end":"2025-06-30","benchmark":"SPY"},
+  "portfolio_summary": {"analysis_start":"2025-01-02","analysis_end":"2025-06-30","starting_market_value":89825.00,"ending_market_value":100000.00,"portfolio_period_return_pct":11.33,"benchmark_return_pct":5.98,"tracking_difference_pct":5.35,"annualized_volatility_pct":19.01,"max_drawdown_pct":6.00,"rebalance_triggered":true,"cash_after_rebalance":150.00},
   "asset_analysis": [
     {"ticker":"AAPL","asset_name":"Apple Inc.","shares":75,"starting_price":185.00,"ending_price":200.00,"ending_market_value":15000.00,"actual_weight_pct":15.00,"target_weight_pct":25.00,"weight_gap_pct":10.00,"period_return_pct":8.11,"contribution_pct":1.25,"action":"BUY","trade_shares":50,"trade_value":10000.00},
     {"ticker":"MSFT","asset_name":"Microsoft Corp.","shares":50,"starting_price":360.00,"ending_price":400.00,"ending_market_value":20000.00,"actual_weight_pct":20.00,"target_weight_pct":16.50,"weight_gap_pct":-3.50,"period_return_pct":11.11,"contribution_pct":2.23,"action":"SELL","trade_shares":-8,"trade_value":3200.00},
