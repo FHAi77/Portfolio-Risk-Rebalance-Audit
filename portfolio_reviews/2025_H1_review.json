@@ -1,0 +1,48 @@
+{
+  "analysis_period": {
+    "start": "2025-01-02",
+    "end": "2025-06-30",
+    "benchmark": "SPY"
+  },
+  "portfolio_summary": {
+    "analysis_start": "2025-01-02",
+    "analysis_end": "2025-06-30",
+    "starting_market_value": 89825.0,
+    "ending_market_value": 100000.0,
+    "portfolio_period_return_pct": 11.33,
+    "benchmark_return_pct": 5.98,
+    "tracking_difference_pct": 5.35,
+    "annualized_volatility_pct": 25.59,
+    "max_drawdown_pct": 6.06,
+    "rebalance_triggered": true,
+    "cash_after_rebalance": 14250.0
+  },
+  "asset_analysis": [
+    {"ticker":"AAPL","asset_name":"Apple Inc.","shares":75,"starting_price":185.0,"ending_price":200.0,"ending_market_value":15000.0,"actual_weight_pct":15.0,"target_weight_pct":25.0,"weight_gap_pct":10.0,"period_return_pct":8.11,"contribution_pct":12.53,"action":"buy","trade_shares":12,"trade_value":2400.0},
+    {"ticker":"MSFT","asset_name":"Microsoft Corp.","shares":50,"starting_price":360.0,"ending_price":400.0,"ending_market_value":20000.0,"actual_weight_pct":20.0,"target_weight_pct":16.5,"weight_gap_pct":-3.5,"period_return_pct":11.11,"contribution_pct":22.28,"action":"sell","trade_shares":8,"trade_value":3200.0},
+    {"ticker":"TLT","asset_name":"iShares 20+ Year Treasury Bond ETF","shares":150,"starting_price":95.0,"ending_price":100.0,"ending_market_value":15000.0,"actual_weight_pct":15.0,"target_weight_pct":18.0,"weight_gap_pct":3.0,"period_return_pct":5.26,"contribution_pct":5.57,"action":"buy","trade_shares":15,"trade_value":1500.0},
+    {"ticker":"GLD","asset_name":"SPDR Gold Shares","shares":60,"starting_price":195.0,"ending_price":250.0,"ending_market_value":15000.0,"actual_weight_pct":15.0,"target_weight_pct":10.0,"weight_gap_pct":-5.0,"period_return_pct":28.21,"contribution_pct":36.23,"action":"sell","trade_shares":20,"trade_value":5000.0},
+    {"ticker":"XLV","asset_name":"Health Care Select Sector SPDR Fund","shares":100,"starting_price":140.0,"ending_price":150.0,"ending_market_value":15000.0,"actual_weight_pct":15.0,"target_weight_pct":10.0,"weight_gap_pct":-5.0,"period_return_pct":7.14,"contribution_pct":11.14,"action":"sell","trade_shares":33,"trade_value":4950.0},
+    {"ticker":"NVR","asset_name":"NVR Inc.","shares":2,"starting_price":5000.0,"ending_price":5000.0,"ending_market_value":10000.0,"actual_weight_pct":10.0,"target_weight_pct":5.5,"weight_gap_pct":-4.5,"period_return_pct":0.0,"contribution_pct":0.0,"action":"sell","trade_shares":2,"trade_value":10000.0},
+    {"ticker":"BKNG","asset_name":"Booking Holdings Inc.","shares":2,"starting_price":4000.0,"ending_price":5000.0,"ending_market_value":10000.0,"actual_weight_pct":10.0,"target_weight_pct":15.0,"weight_gap_pct":5.0,"period_return_pct":25.0,"contribution_pct":11.14,"action":"buy","trade_shares":1,"trade_value":5000.0}
+  ],
+  "rebalance_plan": [
+    {"sequence":1,"action":"sell","ticker":"GLD","shares":20,"price":250.0,"trade_value":5000.0,"cash_after_trade":5000.0,"reason":"overweight by 5.00 percentage points"},
+    {"sequence":2,"action":"sell","ticker":"XLV","shares":33,"price":150.0,"trade_value":4950.0,"cash_after_trade":9950.0,"reason":"overweight by 5.00 percentage points"},
+    {"sequence":3,"action":"sell","ticker":"NVR","shares":2,"price":5000.0,"trade_value":10000.0,"cash_after_trade":19950.0,"reason":"overweight by 4.50 percentage points"},
+    {"sequence":4,"action":"sell","ticker":"MSFT","shares":8,"price":400.0,"trade_value":3200.0,"cash_after_trade":23150.0,"reason":"overweight by 3.50 percentage points"},
+    {"sequence":5,"action":"buy","ticker":"AAPL","shares":12,"price":200.0,"trade_value":2400.0,"cash_after_trade":20750.0,"reason":"underweight by 10.00 percentage points"},
+    {"sequence":6,"action":"buy","ticker":"BKNG","shares":1,"price":5000.0,"trade_value":5000.0,"cash_after_trade":15750.0,"reason":"underweight by 5.00 percentage points"},
+    {"sequence":7,"action":"buy","ticker":"TLT","shares":15,"price":100.0,"trade_value":1500.0,"cash_after_trade":14250.0,"reason":"underweight by 3.00 percentage points"}
+  ],
+  "market_checks": [
+    {"ticker":"AAPL","check_type":"portfolio_ticker","requested_start_date":"2025-01-02","requested_end_date":"2025-06-30","start_price":185.0,"end_price":200.0,"source":"Yahoo Finance and local snapshot","status":"checked"},
+    {"ticker":"MSFT","check_type":"portfolio_ticker","requested_start_date":"2025-01-02","requested_end_date":"2025-06-30","start_price":360.0,"end_price":400.0,"source":"Yahoo Finance and local snapshot","status":"checked"},
+    {"ticker":"TLT","check_type":"portfolio_ticker","requested_start_date":"2025-01-02","requested_end_date":"2025-06-30","start_price":95.0,"end_price":100.0,"source":"local snapshot","status":"fallback_used"},
+    {"ticker":"GLD","check_type":"portfolio_ticker","requested_start_date":"2025-01-02","requested_end_date":"2025-06-30","start_price":195.0,"end_price":250.0,"source":"Yahoo Finance and local snapshot","status":"checked"},
+    {"ticker":"XLV","check_type":"portfolio_ticker","requested_start_date":"2025-01-02","requested_end_date":"2025-06-30","start_price":140.0,"end_price":150.0,"source":"local snapshot","status":"fallback_used"},
+    {"ticker":"NVR","check_type":"portfolio_ticker","requested_start_date":"2025-01-02","requested_end_date":"2025-06-30","start_price":5000.0,"end_price":5000.0,"source":"local snapshot","status":"fallback_used"},
+    {"ticker":"BKNG","check_type":"portfolio_ticker","requested_start_date":"2025-01-02","requested_end_date":"2025-06-30","start_price":4000.0,"end_price":5000.0,"source":"local snapshot","status":"fallback_used"},
+    {"ticker":"SPY","check_type":"benchmark","requested_start_date":"2025-01-02","requested_end_date":"2025-06-30","start_price":585.0,"end_price":620.0,"source":"Yahoo Finance and local snapshot","status":"checked"}
+  ]
+}
