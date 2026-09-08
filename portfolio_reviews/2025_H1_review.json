@@ -1,0 +1,11 @@
+{
+  "analysis_period": {
+    "start": "2025-01-02",
+    "end": "2025-06-30",
+    "benchmark": "SPY"
+  },
+  "portfolio_summary": {},
+  "asset_analysis": [],
+  "rebalance_plan": [],
+  "market_checks": []
+}
