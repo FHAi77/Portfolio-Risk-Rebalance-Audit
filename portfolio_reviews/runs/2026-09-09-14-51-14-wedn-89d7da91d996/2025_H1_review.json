@@ -13,7 +13,7 @@
     "benchmark_return_pct": 5.98,
     "tracking_difference_pct": 5.35,
     "annualized_volatility_pct": 3.99,
-    "max_drawdown_pct": 0.0,
+    "max_drawdown_pct": 1.66,
     "rebalance_triggered": true,
     "cash_after_rebalance": 150.0
   },
